@@ -146,7 +146,37 @@ NULL,		   -- Salary - money
 N'',		   -- Note - nvarchar(max)
 N'5'		   -- Email - nvarchar(50)
 	);
-
+--insert emp_skill
+INSERT dbo.EMP_SKILL(SkillNo, EmpNo, SkillLevel, RegDate)
+VALUES(1, -- SkillNo - int
+2	,	  -- EmpNo - int
+1	,	  -- SkillLevel - int
+GETDATE() -- RegDate - datetime
+	)
+	INSERT dbo.EMP_SKILL(SkillNo, EmpNo, SkillLevel, RegDate)
+VALUES(2, -- SkillNo - int
+2	,	  -- EmpNo - int
+1	,	  -- SkillLevel - int
+GETDATE() -- RegDate - datetime
+	)
+	INSERT dbo.EMP_SKILL(SkillNo, EmpNo, SkillLevel, RegDate)
+VALUES(3, -- SkillNo - int
+2	,	  -- EmpNo - int
+1	,	  -- SkillLevel - int
+GETDATE() -- RegDate - datetime
+	)
+	INSERT dbo.EMP_SKILL(SkillNo, EmpNo, SkillLevel, RegDate)
+VALUES(4, -- SkillNo - int
+2	,	  -- EmpNo - int
+1	,	  -- SkillLevel - int
+GETDATE() -- RegDate - datetime
+	)
+	INSERT dbo.EMP_SKILL(SkillNo, EmpNo, SkillLevel, RegDate)
+VALUES(5, -- SkillNo - int
+2	,	  -- EmpNo - int
+1	,	  -- SkillLevel - int
+GETDATE() -- RegDate - datetime
+	)
 --create view
 CREATE VIEW EMPLOYEE_TRACKING AS 
 SELECT EmpNo, EmpName, Level
@@ -154,3 +184,6 @@ FROM dbo.EMPLOYEE
 WHERE Level >= 3 AND Level <= 5;
 
 GO
+
+
+
